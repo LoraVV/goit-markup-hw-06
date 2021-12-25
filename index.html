@@ -402,14 +402,43 @@
             </div>
         </div>
     </footer>
+
+    <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <p></p>
-            <button data-modal-close class="modal-close">
-                <svg width="11" height="11">
+            <button type="button" data-modal-close class="modal-close">
+                <svg class="modal-cross" width="11" height="11">
                     <use href="/images/sprite.svg#icon-Vectorx"></use>
                 </svg>
             </button>
+            <b class="modal-header">Оставьте свои данные, мы вам перезвоним</b>
+            <form action="" class="modal-form">
+                <label for="name" class="form-input-box">Имя
+                    <input type="text" name="name" class="form-input" required>
+                    <svg class="form-input-icon">
+                        <use href="images/sprite.svg#modal-contact"></use>
+                    </svg>
+                </label>
+                <label for="phone" class="form-input-box">Телефон
+                    <input type="tel" name="tel" class="form-input" required pattern="[0-9]{10}" title="0500505050">
+                    <svg class="form-input-icon">
+                        <use href="images/sprite.svg#modal-tel"></use>
+                    </svg>
+                </label>
+                <label for="email" class="form-input-box">Почта
+                    <input type="email" name="email" class="form-input" >
+                    <svg class="form-input-icon">
+                        <use href="images/sprite.svg#modal-email"></use>
+                    </svg>
+                </label>
+                <label for="coment" class="form-input-box">Комментарий
+                    <textarea name="coment" placeholder="Введите текст" class="form-message" id="coment" cols="30" rows="10"></textarea>
+                </label>
+                <label for="checkbox">
+                    <input type="checkbox" name="checkbox"> Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+                </label>
+                <button type="submit" name="submit" class="form-submit">Отправить</button>
+            </form>
         </div>
     </div>
 
