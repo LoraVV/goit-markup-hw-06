@@ -400,7 +400,19 @@
                     </li>
                 </ul>
             </div>
+            <form action="" class="form-email-submit">
+                <label for="email" class="submit-email-box">Подпишитесь на рассылку
+                    <input type="email" name="email" class="form-email" placeholder="E-mail">
+                </label>
+                <button type="submit" class="button-submit">Подписаться
+                    <svg class="icon-send">
+                        <use href="images/icon-send1.svg"></use>
+                    </svg>
+                </button>
+
+            </form>
         </div>
+
     </footer>
 
     <!-- Модалка -->
@@ -434,8 +446,14 @@
                 <label for="coment" class="form-input-box">Комментарий
                     <textarea name="coment" placeholder="Введите текст" class="form-message" id="coment" cols="30" rows="10"></textarea>
                 </label>
-                <input type="checkbox" id="checkbox" name="checkbox" class="policy-checkbox"> Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#">Условия договора</a>
-                <label for="checkbox" class="policy-box"></label>
+
+                <label for="checkbox" class="policy-box">
+                    <input type="checkbox" id="checkbox" name="checkbox" class="policy-checkbox"> 
+                    <svg class="icon-check">
+                        <use href="/images/icon-check.svg" class="check-svg"></use>
+                    </svg>
+                    Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#">Условия договора</a>
+                </label>
                 <button type="submit" name="submit" class="form-submit">Отправить</button>
             </form>
         </div>
