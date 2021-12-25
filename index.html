@@ -420,13 +420,13 @@
                     </svg>
                 </label>
                 <label for="phone" class="form-input-box">Телефон
-                    <input type="tel" name="tel" class="form-input" required pattern="[0-9]{10}" title="0500505050">
+                    <input type="tel" name="tel" class="form-input" pattern="[0-9]{10}" title="0500505050" required>
                     <svg class="form-input-icon">
                         <use href="images/sprite.svg#modal-tel"></use>
                     </svg>
                 </label>
                 <label for="email" class="form-input-box">Почта
-                    <input type="email" name="email" class="form-input" >
+                    <input type="email" name="email" class="form-input" required>
                     <svg class="form-input-icon">
                         <use href="images/sprite.svg#modal-email"></use>
                     </svg>
@@ -434,9 +434,8 @@
                 <label for="coment" class="form-input-box">Комментарий
                     <textarea name="coment" placeholder="Введите текст" class="form-message" id="coment" cols="30" rows="10"></textarea>
                 </label>
-                <label for="checkbox">
-                    <input type="checkbox" name="checkbox"> Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
-                </label>
+                <input type="checkbox" id="checkbox" name="checkbox" class="policy-checkbox"> Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#">Условия договора</a>
+                <label for="checkbox" class="policy-box"></label>
                 <button type="submit" name="submit" class="form-submit">Отправить</button>
             </form>
         </div>

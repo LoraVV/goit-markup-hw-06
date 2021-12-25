@@ -376,6 +376,19 @@ ul {
     padding: 0 10px 0 35px;
 }
 
+.form-input:hover,
+.form-input:focus,
+.form-message:hover,
+.form-message:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+}
+
+.form-input:hover~.form-input-icon,
+.form-input:focus~.form-input-icon {
+    fill: var(--accent-color);
+}
+
 .form-message {
     font-family: inherit;
     resize: none;
@@ -395,6 +408,94 @@ ul {
     width: 18px;
     height: 18px;
     color: var(--title-text-color);
+    transition: border 250ms var(--animation-timing-function), fill 250ms var(--animation-timing-function);
+}
+
+.policy-box {
+    display: block;
+    /* position: relative; */
+    /* align-items: center; */
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 30px;
+}
+
+.policy-checkbox {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    transition: border 250ms var(--animation-timing-function);
+}
+
+.policy-checkbox::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 1px solid var(--title-text-color);
+    border-radius: 2px;
+    margin-right: 20px;
+}
+
+.policy-checkbox:checked+.policy-box::before {
+    background-color: var(--accent-color);
+    background-image: url(../images/sprite.svg#modal-check);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.policy-checkbox:focus+.policy-box::before {
+    border: 1px solid var(--accent-color);
+}
+
+.policy-box a {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+
+/* .policy-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+.form-submit {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    box-shadow: var(--box-shadow);
+    border-radius: 4px;
+    height: 50px;
+    min-width: 200px;
+    text-align: center;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-decoration: none;
+    letter-spacing: 0.06em;
+    transition: background-color 250ms var(--animation-timing-function);
+}
+
+.form-submit:hover,
+.form-submit:focus {
+    cursor: pointer;
+    background-color: #1b71b8;
 }
 
 
