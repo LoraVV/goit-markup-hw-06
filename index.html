@@ -401,7 +401,7 @@
                 </ul>
             </div>
             <form action="" class="form-email-submit">
-                <label for="email" class="submit-email-box">Подпишитесь на рассылку
+                <label class="submit-email-box">Подпишитесь на рассылку
                     <input type="email" name="email" class="form-email" placeholder="E-mail">
                 </label>
                 <button type="submit" class="button-submit">Подписаться
@@ -420,38 +420,38 @@
         <div class="modal">
             <button type="button" data-modal-close class="modal-close">
                 <svg class="modal-cross" width="11" height="11">
-                    <use href="/images/sprite.svg#icon-Vectorx"></use>
+                    <use href="./images/sprite.svg#icon-Vectorx"></use>
                 </svg>
             </button>
             <b class="modal-header">Оставьте свои данные, мы вам перезвоним</b>
             <form action="" class="modal-form">
-                <label for="name" class="form-input-box">Имя
-                    <input type="text" name="name" class="form-input" required>
+                <label class="form-input-box">Имя
+                    <input type="text" name="name" id="name" class="form-input" required>
                     <svg class="form-input-icon">
-                        <use href="images/sprite.svg#modal-contact"></use>
+                        <use href="./images/sprite.svg#modal-contact"></use>
                     </svg>
                 </label>
-                <label for="phone" class="form-input-box">Телефон
-                    <input type="tel" name="tel" class="form-input" pattern="[0-9]{10}" title="0500505050" required>
+                <label class="form-input-box">Телефон
+                    <input type="tel" name="tel" id="phone" class="form-input" pattern="[0-9]{10}" title="0500505050" required>
                     <svg class="form-input-icon">
-                        <use href="images/sprite.svg#modal-tel"></use>
+                        <use href="./images/sprite.svg#modal-tel"></use>
                     </svg>
                 </label>
-                <label for="email" class="form-input-box">Почта
-                    <input type="email" name="email" class="form-input" required>
+                <label class="form-input-box">Почта
+                    <input type="email" name="email" id="email" class="form-input" required>
                     <svg class="form-input-icon">
-                        <use href="images/sprite.svg#modal-email"></use>
+                        <use href="./images/sprite.svg#modal-email"></use>
                     </svg>
                 </label>
-                <label for="coment" class="form-input-box">Комментарий
+                <label class="form-input-box">Комментарий
                     <textarea name="coment" placeholder="Введите текст" class="form-message" id="coment" cols="30" rows="10"></textarea>
                 </label>
 
-                <label for="checkbox" class="policy-box">
+                <label class="policy-box">
                     <input type="checkbox" id="checkbox" name="checkbox" class="policy-checkbox"> 
-                    <svg class="icon-check">
-                        <use href="./images/sprite.svg#modal-check" class="check-svg"></use>
-                    </svg>
+                    <span class="icon-check">
+                        <!-- <use href="./images/sprite.svg#modal-check" class="check-svg"></use> -->
+                    </span>
                     Соглашаюсь с рассылкой и принимаю &nbsp;<a href="#">Условия договора</a>
                 </label>
                 <button type="submit" name="submit" class="form-submit">Отправить</button>

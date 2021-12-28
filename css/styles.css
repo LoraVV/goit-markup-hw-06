@@ -245,6 +245,7 @@ ul {
 
 .button-hero {
     display: inline-block;
+    border: transparent;
     box-shadow: var(--box-shadow);
     border-radius: 4px;
     padding: 10px 32px;
@@ -360,7 +361,7 @@ ul {
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: var(--primary-text-color);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form-input,
@@ -374,20 +375,18 @@ ul {
     padding: 0 10px 0 35px;
 }
 
-.form-input:hover,
 .form-input:focus,
-.form-message:hover,
 .form-message:focus {
     outline: none;
     border: 1px solid var(--accent-color);
 }
 
-.form-input:hover~.form-input-icon,
 .form-input:focus~.form-input-icon {
     fill: var(--accent-color);
 }
 
 .form-message {
+    display: block;
     font-family: inherit;
     resize: none;
     height: 120px;
@@ -412,6 +411,7 @@ ul {
 .policy-box {
     display: flex;
     align-items: center;
+    justify-content: center;
     /* position: relative; */
     /* align-items: center; */
     width: 100%;
@@ -431,7 +431,7 @@ ul {
     padding: 0px;
     clip: rect(0 0 0 0);
     overflow: hidden;
-    /* transition: border 250ms var(--animation-timing-function); */
+    /* transition: background-image 250ms var(--animation-timing-function); */
 }
 
 .icon-check {
@@ -440,6 +440,10 @@ ul {
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
     margin-right: 10px;
+    background-color: var(--primary-white-color);
+    background-image: url("../images/no-chek.svg");
+    background-position: center;
+    background-size: contain;
 }
 
 .check-svg {
@@ -447,10 +451,10 @@ ul {
 }
 
 .policy-checkbox:checked+.icon-check {
-    /* background-image: url("../images/yes.svg"); */
+    background-image: url("../images/icon-check.svg");
+    background-position: center;
+    background-size: contain;
     background-color: var(--accent-color);
-    /* background-position: center;
-                                         background-size: contain; */
     background-origin: border-box;
     border-color: var(--accent-color);
 }
@@ -755,6 +759,7 @@ ul {
 
 .footer-container {
     display: flex;
+    flex-grow: 1;
     align-items: baseline;
 }
 
