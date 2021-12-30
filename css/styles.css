@@ -441,19 +441,20 @@ ul {
     border-radius: 2px;
     margin-right: 10px;
     background-color: var(--primary-white-color);
-    background-image: url("../images/no-chek.svg");
+    /* background-image: url("../images/no-chek.svg");
     background-position: center;
-    background-size: contain;
+    background-size: contain; */
 }
 
-.check-svg {
+
+/* .check-svg {
     fill: var(--primary-white-color);
-}
+} */
 
 .policy-checkbox:checked+.icon-check {
-    background-image: url("../images/icon-check.svg");
+    /* background-image: url("../images/icon-check.svg");
     background-position: center;
-    background-size: contain;
+    background-size: contain; */
     background-color: var(--accent-color);
     background-origin: border-box;
     border-color: var(--accent-color);
